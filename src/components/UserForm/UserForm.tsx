@@ -28,7 +28,6 @@ const UserForm: React.FC<UserFormProps> = ({onSubmit}) => {
   const onFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     onSubmit({id: Math.random().toString(), ...user})
-    console.log(user)
   };
 
   return (
