@@ -35,11 +35,19 @@ const UserForm: React.FC<UserFormProps> = ({onSubmit}) => {
       <h4>Add user</h4>
       <div className="form-group mb-2">
         <label htmlFor="name">Name</label>
-        <input name="name" type="text" className="form-control" value={user.name} onChange={onTextFieldChange}/>
+        <input name="name"
+               type="text"
+               className="form-control"
+               value={user.name}
+               onChange={onTextFieldChange}/>
       </div>
       <div className="form-group mb-2">
         <label htmlFor="email">Email</label>
-        <input name="email" type="email" className="form-control" value={user.email} onChange={onTextFieldChange}/>
+        <input name="email"
+               type="email"
+               className="form-control"
+               value={user.email}
+               onChange={onTextFieldChange}/>
       </div>
       <div className="form-group mb-2">
         <label><input name="isActive"
